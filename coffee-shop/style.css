@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&family=Nunito:wght@200;300;400;500;600&display=swap');
+
+:root {
+    --main-color: #be9c79;
+    --black: #333;
+    --white: #fff;
+    --light-color: #666;
+    --border: .2rem solid var(--black);
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    /* overflow-x: hidden; */
+}
+
+/* -------header section starts----------- */
+
+.header{
+    display: flex; align-items: center; justify-content: space-between;
+    padding: .8rem 11%; box-shadow: var(--box-shadow);
+    position: sticky; top: 0; z-index: 1000; background: #fff;
+}
+
+.header .logo img{
+    width: 2.9rem;
+}
+
+.header .nav-bar a{
+    color: var(--black); margin-left: 1.1rem; font-size: 1.2rem;
+}
+
+/* --------home section starts-------- */
+
+.home{
+    background: linear-gradient(90deg, var(--white), transparent 70%), url(images/home-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw; height: 95vh; padding: 1rem 11%;
+    display: flex; align-items: center; justify-content: flex-start;
+}
+
+.home .content{
+    text-align: center;
+    width: 40%; overflow: hidden;
+}
+
+.home .content h1{
+    font-family: 'Merienda One', cursive;
+    font-size: 3.7rem; padding-bottom: .5rem; color: var(--black);
+}
+.home .content p{
+    color: var(--black);
+    line-height: 2.2;
+    padding-bottom: 1.5rem;
+}
+.home .content a{
+    background: var(--main-color);
+    color: #fff; font-size: 1.2rem; padding: .6rem 2.5rem;
+}
+
+/* ----------about section starts--------------- */
+
+.about{
+    padding: 2rem 11%;
+}
+
+.about .box-containerr{
+    display: flex; align-items: center; justify-content: center; gap: 2rem;
+}
+
+.about .box-containerr .left{
+    width: 50%;
+}
+.about .box-containerr .left img{
+    width: 100%; height: 100%;
+}
+
+.about .box-containerr .right{
+    width: 50%;
+}
+.about .box-containerr .right h3{
+    font-family: 'Merienda One', cursive;
+    font-size: 2.8rem; padding-bottom: 1rem; color: var(--black);
+}
+.about .box-containerr .right p{
+    color: var(--light-color);
+    line-height: 2.2;
+    padding-bottom: 1.5rem; font-size: .9rem;
+}
+.about .box-containerr .right .btn{
+    background: var(--main-color);
+    color: #fff; font-size: 1.2rem; padding: .6rem 2.5rem;
+}
+
+/* ------------facility section starts------------ */
+
+.facility{
+    padding: 2rem 11%;
+}
+
+.facility .heading{
+    text-align: center;
+}
+.facility .heading img{
+    width: 13rem;
+}
+.facility .heading h2{
+    font-family: 'Merienda One', cursive;
+    font-size: 2.5rem; padding-bottom: 1rem; color: var(--black);
+    padding-top: .5rem;
+}
+
+.facility .grid.boxx{
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 2rem;
+}
+.facility .grid.boxx .box{
+    text-align: center; padding: 1rem;
+}
+
+.facility .grid.boxx img{
+    padding-bottom: 1rem;
+}
+.facility .grid.boxx .box h4{
+    font-size: 1.3rem; color: var(--black);
+    padding-bottom: .5rem;
+}
+.facility .grid.boxx .box p{
+    font-size: .9rem; color: var(--light-color);
+    line-height: 2.2;
+}
+
+/* -----------menu section starts-------------- */
+
+.menu{
+    padding: 2rem 11%;
+}
+
+.menu .heading{
+    text-align: center;
+}
+.menu .heading img{
+    width: 13rem;
+}
+.menu .heading h2{
+    font-family: 'Merienda One', cursive;
+    font-size: 2.5rem; padding-bottom: 1rem; color: var(--black);
+    padding-top: .5rem;
+}
+
+.menu .grid-boxx{
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    padding: 2rem;
+    /* gap: 2rem; */
+}
+.menu .grid-boxx .box{
+    display: flex; align-items: center; flex-direction: column;
+}
+.menu .grid-boxx .box img{
+    width: 80%;
+}
+.menu .grid-boxx .box p{
+    font-size: 1.3rem; font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+/* ----------gallary section------------ */
+
+.gallary{
+    padding: 2rem 11%;
+}
+
+.gallary .heading{
+    text-align: center;
+}
+.gallary .heading img{
+    width: 13rem;
+}
+.gallary .heading h2{
+    font-family: 'Merienda One', cursive;
+    font-size: 2.5rem; padding-bottom: 1rem; color: var(--black);
+    padding-top: .5rem;
+}
+
+.gallary .grid-boxx{
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    padding: 2rem; gap: 1rem; 
+}
+
+.gallary .grid-boxx .box{
+    overflow: hidden;
+}
+
+.gallary .grid-boxx .box img{
+    width: 100%; height: 100%;
+}
+
+/* --------team section starts----------- */
+
+.team{
+    padding: 2rem 11%;
+}
+
+.team .heading{
+    text-align: center;
+}
+.team .heading img{
+    width: 13rem;
+}
+.team .heading h2{
+    font-family: 'Merienda One', cursive;
+    font-size: 2.5rem; padding-bottom: 1rem; color: var(--black);
+    padding-top: .5rem;
+}
+
+.team .grid-boxx{
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    padding: 2rem; gap: 1rem;
+}
+
+.team .grid-boxx .box{
+    overflow: hidden;
+}
+.team .grid-boxx .box img{
+    width: 100%; height: 95%;
+}
+
+.team .grid-boxx .box p{
+    font-size: 1.2rem; text-align: center;font-weight: 600;
+}
+
+/* ------------contact section starts------------------- */
+
+.contact{
+    padding: 2rem 11%;
+}
+
+.contact .heading{
+    text-align: center;
+}
+.contact .heading img{
+    width: 13rem;
+}
+.contact .heading h2{
+    font-family: 'Merienda One', cursive;
+    font-size: 2.5rem; padding-bottom: 1rem; color: var(--black);
+    padding-top: .5rem;
+}
+
+.contact .flexx-boxx{
+    display: flex; align-items: center; justify-content: center;
+    /* gap: 2rem; */
+}
+.contact .flexx-boxx .left{
+    width: 55%;
+}
+.contact .flexx-boxx .left img{
+    width: 100%;
+    height: 100%;
+}
+
+.contact .flexx-boxx .right{
+    width: 45%; padding: 2rem;
+}
+
+.contact .flexx-boxx .right form{
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center; gap: 1rem;
+    border: 2px solid var(--black); padding: 1rem 0;
+}
+.contact .flexx-boxx .right h4{
+    font-size: 1.6rem; font-weight: 600; color: var(--black);
+}
+
+.contact .flexx-boxx .right input{
+    border: 2px solid var(--black);
+    padding: 1rem; font-size: 1.1rem; width: 90%; font-weight: bold;
+}
+.contact .flexx-boxx .right .btn{
+    background: var(--main-color);
+    color: #fff; font-size: 1.1rem; padding: .7rem 2.2rem;
+}
+
+/* ----------footer section----------- */
+
+.footer{
+    padding: 2rem 11% 0 11%;
+}
+
+.footer .grid-boxx{
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    padding: 2rem; gap: 1rem; text-align: center; align-items: center;
+}
+
+.footer .grid-boxx .box{
+    display: flex; align-items: center; flex-direction: column;
+    height: 10rem;
+}
+
+.footer .grid-boxx .box i{
+    background: var(--main-color); border-radius: 50%;
+    padding: 1rem; display: block; color: #fff; font-size: 1.4rem;
+    margin-bottom: 1rem; overflow: hidden;
+}
+
+.footer .grid-boxx .box span{
+    font-weight: 600; font-size: 1.2rem; padding-bottom: 1rem; overflow: hidden;
+}
+.footer .grid-boxx .box p{
+    font-weight: 400; font-size: 1rem; padding-bottom: 1rem; color: var(--light-color); overflow: hidden;
+}
+
+.footer .bottom{
+    border-top: 2px solid var(--main-color);
+    padding: 1rem; text-align: center;
+}
+.footer .bottom p{
+    font-size: 1.2rem; font-weight: 600; color: var(--black);
+}
+.footer .bottom span{
+    color: var(--main-color);
+}
+
+@media(max-width: 771px)
+{
+  .home .content{
+    width: auto;
+    overflow: auto;
+  }  
+ 
+  .about .box-containerr{
+    flex-direction: column;
+    text-align: center;
+  }
+  .about .box-containerr .left,.about .box-containerr .right{
+    width: auto;
+  }
+
+  .menu .grid-boxx,.team .grid-boxx, .gallary .grid-boxx{
+    padding: 0;
+  }
+
+  .contact .flexx-boxx{
+    flex-direction: column;
+  }
+
+  .contact .flexx-boxx .left, .contact .flexx-boxx .right{
+    width: auto;
+    padding: 0;
+  }
+
+  .header .nav-bar.active{
+    display: flex;
+  }
+  .header .nav-bar{
+    position: absolute;
+    background: #fff;
+    top: 0;
+    height: 100vh;
+    right: 30%;
+    left: 0;
+    z-index: 10000;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .header .nav-bar a{
+    border: 1px solid #ccc;
+    margin: 0;
+    width: 90%;
+    text-align: center;
+    padding: .5rem 0;
+  }
+  #close{
+    position: absolute;
+    top: 1rem;
+    font-size: 1.2rem;
+    left: 85%;
+  }
+}
